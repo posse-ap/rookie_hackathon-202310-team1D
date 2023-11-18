@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO-List</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-serif text-base">
+
+  <div class="container mx-auto max-w-screen-md px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4 text-green-500">レク部タスク</h1>
+    <form class="mb-4">
+      <input class="task_value h-6 border border-gray-300 rounded px-2" type="text" />
+      <button class="task_submit h-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-4 rounded ml-4" type="button">Add Task</button>
+      
+    </form>
+    <div id="table" class="bg-blue-200 p-4 rounded-lg">
+        <h2 class="text-lg font-bold mb-4">Current Tasks</h2>
+        <ul class="task_list mt-4"></ul>
+  </div>
+  <div class="container mx-auto max-w-screen-md px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4 text-red-500">交通部タスク</h1>
+    <form class="mb-4">
+      <input class="task_value h-6 border border-gray-300 rounded px-2" type="text" />
+      <button class="task_submit h-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-4 rounded ml-4" type="button">Add Task</button>
+      
+    </form>
+    <div id="table" class="bg-yellow-200 p-4 rounded-lg">
+        <h2 class="text-lg font-bold mb-4">Current Tasks</h2>
+        <ul class="task_list mt-4"></ul>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</html>
