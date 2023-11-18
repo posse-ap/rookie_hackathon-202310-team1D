@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <header></header>
+    <header class="header">
+        <h1><a href="index.html"><img class="logo" src="./assets/img/logo.svg" alt="WCBカフェ ホーム"></a></h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#setumei">Purpose</a></li>
+                <li><a href="#osusume">Recommend</a></li>
+                <li><a href="#plan">Sample Plan</a></li>
+            </ul>]
+        </nav>
+    </header>
     <div class="mv">
         <div class="item active">
             <img class="mainImage" src="./assets/img/268151.jpg" alt>
@@ -19,7 +29,10 @@
             <img class="mainImage" src="./assets/img/LINE_ALBUM_第5回新人ハッカソン_231011.jpg" alt>
         </div>
     </div>
+    <!--目的明示セクション-->
+    
     <!-- おすすめスポットセクション -->
+    <h2 class="heading02" id="osusume"><span>箱根の注目スポット！！</span></h2>
     <div class="wrapper grid">
         <div class="">
             <img src="./assets/img/hakone9.webp" alt="">
@@ -67,6 +80,86 @@
             <p>ヨーロッパや北欧の戦艦をモデルにした観光船で、本格的な装飾も見どころ。芦ノ湖にある３つの港から乗船でき、富士山や箱根神社の赤い鳥居などの絶景ポイントを約60分かけて周遊します。</p>
         </div>
     </div><!-- /.grid -->
+    <h2 class="heading02" id="sankou"><span>参考　旅行プラン！</span></h2>
+    <section id="daily" class="section daily">
+        <div class="section-body">
+          <div class="container">
+            <div  class="splide daily-slide">
+              <div class="splide__track daily-slideTrack">
+                <ul class="splide__list daily-list">
+                  <li class="splide__slide daily-item" data-scroll>
+                    <figure class="daily-itemImage">
+                      <img src="./assets/img/sushilunch.webp" alt="">
+                    </figure>
+                    <div class="daily-itemBody">
+                      <h2 class="daily-title">
+                        <span class="daily-titleNumber">Day 1 </span><span class="daily-titleText">Lunch</span>
+                      </h2>
+                      <ul class="daily-outline">
+                        <li class="daily-outlineItem">寿司屋　禅</li>
+                      </ul>
+                      <div class="daily-description">
+                        <p>西湘パイパスの小田原ICのすぐそこにある寿司屋さんで、少し高級感があります。東京からのドライブでたまった疲れはここでおとし配車替えを行い普段話していない友達ともはなしてみましょう。</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide daily-item" data-scroll>
+                    <figure class="daily-itemImage">
+                      <img src="./assets/img/chokoku.jpg" alt="">
+                    </figure>
+                    <div class="daily-itemBody">
+                      <h2 class="daily-title">
+                        <span class="daily-titleNumber">Day 1 </span><span class="daily-titleText">Afternoon</span>
+                      </h2>
+                      <ul class="daily-outline">
+                        <li class="daily-outlineItem">彫刻の森博物館</li>
+                      </ul>
+                      <div class="daily-description">
+                        <p>箱根八里の歌が歌われてきた箱根の山の中腹には彫刻の森美術館があります。ここでは自然の豊かな自然を利用してうみだされた数多くの芸術作品に触れられるほか様々なアクティビティができます。メンバー間で担当を決めフォトコンなどをするのもおもしろいでしょう。</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide daily-item" data-scroll>
+                    <figure class="daily-itemImage">
+                      <img src="./assets/img/owakudani.jpg" alt="">
+                    </figure>
+                    <div class="daily-itemBody">
+                      <h2 class="daily-title">
+                        <span class="daily-titleNumber">Day 2 </span><span class="daily-titleText">Morning</span>
+                      </h2>
+                      <ul class="daily-outline">
+                        <li class="daily-outlineItem">大涌谷</li>
+                      </ul>
+                      <div class="daily-description">
+                        <p>箱根に行ったらここを外すことはできないでしょう。大自然の威力を目の前にして普段のストレスの小ささを悟りそれを和らげることも期待できますし、ロープーウェイでワイワイ話せば親睦をふかめることもできるでしょう。</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide daily-item" data-scroll>
+                    <figure class="daily-itemImage">
+                      <img src="./assets/img/winterasinoko.jpg" alt="">
+                    </figure>
+                    <div class="daily-itemBody">
+                      <h2 class="daily-title">
+                        <span class="daily-titleNumber">Day 2 </span><span class="daily-titleText">Lunch</span>
+                      </h2>
+                      <ul class="daily-outline">
+                        <li class="daily-outlineItem">芦ノ湖畔</li>
+                      </ul>
+                      <div class="daily-description">
+                        <p>旅行最終日の昼食は芦ノ湖畔に並ぶ定食屋の並びで旅行最後の思い出をつくるのはいかがでしょうか。周辺には寄木細工などのさまざまな工芸品があってみんなでおそろいのグッズを買うことでよい思い出にもなるでしょう。また、寒い日には雪が降って芦ノ湖は幻想的な姿をみせてくれるかもしれません。</p>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="flex justify-center items-center">
+        <a href="./index2.html" class="btn-text-3d">タスク管理サイトはこちら</a>
+    </div>
     <footer>
         <div class="wrapper">
             <p><small>&copy; 2023 POSSE </small></p>
@@ -74,7 +167,6 @@
     </footer>
 </body>
 </html>
-<script src="https://yubinbango.github.io/yubinbango/yubinbango.js"charset="UTF-8"></script>
-<script src="./assets/js/script.js" defer></script>
+
 </body>
 </html>
