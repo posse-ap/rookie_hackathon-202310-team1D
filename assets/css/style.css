@@ -201,7 +201,9 @@ img {
 
 /* 大高担当部分 */
 .container{
-    padding-left: 350px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 50px;
 }
 
 .header {
@@ -229,7 +231,7 @@ img {
   }
   
 .daily-slide{
-  border-left: 3px solid red;
+  border: 20px solid red;
     padding-left: 10px;
 }
 
